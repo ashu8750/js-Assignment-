@@ -32,3 +32,27 @@ console.clear();
     console.count('odd');
   }
 });
+6.console.dir & console.dirxml
+console.dir prints out objects in a nice formatted way:
+
+const fancyThings = {
+  car: ' Ferrari',
+  watch: ' Cartier',
+  clothing: {
+    shoes: ' Christian Louboutin',
+    dress: ' Versace'
+  },
+  boat: ' Sunseeker'
+}
+
+8.console.dir(fancyThings);
+7.The console.count method is used to count the number of times it has been invoked with the same provided label. For example, here we have two counters, one for even values and one for odd values:
+
+[1, 2, 3, 4, 5].forEach(nb => {
+  if (nb % 2 === 0) {
+    console.count('even');
+  } else {
+    console.count('odd');
+  }
+});
+
