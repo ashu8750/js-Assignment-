@@ -1,0 +1,34 @@
+1.console.log is the usual method we use to log values out to the console:
+
+const name = 'ASHU';
+console.log('Hello', name); 
+
+2. we can access to more logging methods like warn, info and error:
+
+console.info('Just ABC');
+console.warn('Lookout!');
+console.error('AN eroor occured ');
+
+3.console.trace:
+
+function hello(name = 'house') 
+{
+  console.trace('name:', name);
+  return `Hello ${name}!`;
+}
+hello();
+
+
+4.You can clear the console with console.clear:
+
+console.clear();
+
+5.The console.count method is used to count the number of times it has been invoked with the same provided label. For example, here we have two counters, one for even values and one for odd values:
+
+[1, 2, 3, 4, 5].forEach(nb => {
+  if (nb % 2 === 0) {
+    console.count('even');
+  } else {
+    console.count('odd');
+  }
+});
